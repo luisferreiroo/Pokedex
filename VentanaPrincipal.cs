@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pokedex2022_CSharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -43,5 +44,19 @@ namespace Pokedex
             MemoryStream ms = new System.IO.MemoryStream(img);
             return (Image.FromStream(ms));
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void botonInfo_Click(object sender, EventArgs e)
+        {
+
+            Ventana2 v = new Ventana2();
+
+            v.cambiaDescripcionPokemon(misPokemons.Rows[0]["descripcion"].ToString());
+            v.Show();
+        }
+
     }
 }

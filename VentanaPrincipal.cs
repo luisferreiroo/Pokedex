@@ -58,5 +58,9 @@ namespace Pokedex
             v.Show();
         }
 
+        private void nombrePokemon_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

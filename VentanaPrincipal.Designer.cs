@@ -64,10 +64,12 @@ namespace Pokedex
             // derecha
             // 
             this.derecha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.derecha.Cursor = System.Windows.Forms.Cursors.Default;
             this.derecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.derecha.ForeColor = System.Drawing.SystemColors.Control;
             this.derecha.Location = new System.Drawing.Point(259, 363);
             this.derecha.Name = "derecha";
+            this.derecha.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.derecha.Size = new System.Drawing.Size(27, 26);
             this.derecha.TabIndex = 2;
             this.derecha.Text = ">";
@@ -78,12 +80,13 @@ namespace Pokedex
             // 
             this.nombrePokemon.BackColor = System.Drawing.Color.Lime;
             this.nombrePokemon.Font = new System.Drawing.Font("Old English Text MT", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombrePokemon.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nombrePokemon.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.nombrePokemon.Location = new System.Drawing.Point(431, 150);
             this.nombrePokemon.Name = "nombrePokemon";
             this.nombrePokemon.Size = new System.Drawing.Size(100, 23);
             this.nombrePokemon.TabIndex = 3;
             this.nombrePokemon.Text = "label1";
+            this.nombrePokemon.Click += new System.EventHandler(this.nombrePokemon_Click);
             // 
             // pictureBox2
             // 

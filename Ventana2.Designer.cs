@@ -54,4 +54,4 @@ namespace Pokedex2022_CSharp
         private System.Windows.Forms.Label cajaDescripcion;
         private System.Windows.Forms.Label caja;
     }
-}
+}   
